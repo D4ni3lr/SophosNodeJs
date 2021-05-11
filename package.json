@@ -1,0 +1,17 @@
+{
+  "name": "prjnodejs",
+  "version": "1.0.0",
+  "description": "Proyecto NODE JS prueba técnica",
+  "main": "index.js",
+  "scripts": {
+    "test_create": "node tests/test_create.js",
+    "test_search": "node tests/test_search.js",
+    "start": "node index.js"
+  },
+  "author": "Daniel Ramirez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
