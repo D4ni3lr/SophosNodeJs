@@ -1,4 +1,5 @@
 const http = require('http')
+const port = process.env.PORT || 3100;
 
 console.log('Creando registros')
 for (var i = 0; i < 10; i++) {
@@ -11,7 +12,7 @@ function sendMovie(id, title, year, type) {
     });
     var postRequest = http.request({
         hostname: 'localhost',
-        port: 3000,
+        port: port,
         path: '/',
         method: 'POST',
         headers: {

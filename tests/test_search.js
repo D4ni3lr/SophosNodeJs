@@ -1,6 +1,7 @@
-var request = require('request');
+const request = require('request');
 
-var hostUrl = 'http://localhost:3000'
+const port = process.env.PORT || 3100;
+const hostUrl = 'http://localhost:'+port
 
 request(hostUrl, function (error, response, body) {
     if (!error && response.statusCode == 200) {
